@@ -14,7 +14,7 @@ export class UserComponent  {
   hobbies: string[];
   showHobbies: boolean;
   posts:Post[];
-  todos:Toodo[];
+  todos:Todo[];
   users:User[];
 
   constructor(private postsService: PostsService){
