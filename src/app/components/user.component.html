@@ -1,0 +1,50 @@
+<!-- <h1>{{name}}</h1>
+<p> Email: {{email}}</p>
+<p>{{address.street}} {{address.city}} {{address.state}}</p>
+<button (click)="toggleHobbies()">{{showHobbies ? "Hide Hobbies" : "Show Hobbies"}}</button>
+<div *ngIf="showHobbies">
+  <h3>Hobbies</h3> -->
+  <!-- <ul>
+    <li *ngFor="let hobby of hobbies; let i = index">
+      {{hobby}} <button (click)="deleteHobby(i)">X</button>
+    </li>
+  </ul> -->
+  <!-- <form (submit)="addHobby(hobby.value)">
+    <label>Add Hobby: </label><br />
+    Name:<input type="text" #hobby /><br />
+  </form> -->
+<!-- </div>
+
+<hr /> -->
+<!-- <h3> Edit User</h3>
+<form>
+  <label>Name: </label><br />
+  Name:<input type="text" name="name" [(ngModel)]="name"/><br />
+  Email:  <input type="text" name="email" [(ngModel)]="email"/><br />
+  street: <input type="text" name="address.street" [(ngModel)]="address.street"/><br />
+  City: <input type="text" name="address.city" [(ngModel)]="address.city"/><br />
+  State <input type="text" name="address.state" [(ngModel)]="address.state"/><br />
+</form> -->
+
+<div class="container">
+  <div class="header">
+    <img class="logo" src="https://news.ycombinator.com/y18.gif"> <span class="hacker-news">Hacker News</span>
+    <a class="nav-link" href="">new</a>|
+    <a class="nav-link" href="">comments</a>|
+    <a class="nav-link" href="">show</a>|
+    <a class="nav-link" href="">ask</a>|
+    <a class="nav-link" href="">jobs</a>|
+    <a class="nav-link" href="">submit</a>
+    <a class="nav-link login" href="">login</a>
+  </div>
+
+  <div *ngFor="let user of users">
+    <div class="post" *ngFor="let post of posts" >
+      <p>{{post.id}}. <img class="arrow-icon" src="https://news.ycombinator.com/grayarrow2x.gif"> {{post.title}} <span class="website-text">({{user.email}})</span></p>
+
+        <div class="bottom-text">
+          <span class="points-text">{{post.title}}</span>
+      </div>
+    </div>
+  </div>
+</div>
