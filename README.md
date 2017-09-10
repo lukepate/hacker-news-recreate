@@ -1,6 +1,10 @@
 # hacker-news-angular ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 Having fun with angular and JSON placeholder's 
+The project is currently deployed here:
+
+http://hacker-news.surge.sh/
+
 
 ## Installation
 
